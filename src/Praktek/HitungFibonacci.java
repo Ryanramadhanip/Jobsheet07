@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Praktek;
-
+import java.util.Scanner;
 /**
  *
  * @author Ryan Ramadhani
@@ -21,5 +21,15 @@ public class HitungFibonacci {
     {
         String identitas = "Ryan Ramadhani Putra / X RPL 2 / 29";
         tampilJudul(identitas);
+        
+        int n = tampilInput();
+    }
+    
+    public static int tampilInput()
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bilangan ke-: ");
+        int n = scanner.nextInt();
+        return n;
     }
 }
