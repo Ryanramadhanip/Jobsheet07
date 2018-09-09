@@ -27,6 +27,7 @@ public class HitungFibonacci {
         
         int n = tampilInput();
         BigInteger hasil = fibo(n);
+        tampilHasil(n, hasil);
     }
     
     public static int tampilInput()
@@ -50,5 +51,10 @@ public class HitungFibonacci {
         }
         
         return hasil[n-1];
+    }
+    
+    public static void tampilHasil(int n, BigInteger hasil)
+    {
+        System.out.println("Bilangan Fibonacci ke-" + n + " : " + hasil);
     }
 }
