@@ -23,5 +23,12 @@ public class Tugas01 {
         System.out.print("Masukkan Jumlah Uang : ");
         int uang = baca.nextInt();
         
+        for(int i = 0; i < data.length; i++)
+        {
+            int jumlah = uang / data[i];
+            uang = uang - (data[i] * jumlah);
+            
+            System.out.println("Lembar " + data[i] + " = " + jumlah);
+        }
     }
 }
