@@ -22,5 +22,12 @@ public class Tugas02 {
         
         System.out.print("Jumlah berat maksimal : ");
         int n = baca.nextInt();
+        
+        for (int i = 0; i < berat.length; i++)
+        {
+            int hasil =  n / berat[i];
+            n = n - (berat[i] * hasil);
+            bayaran += hasil * bayar[i];
+        }
     }
 }
