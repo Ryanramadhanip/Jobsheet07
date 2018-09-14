@@ -14,5 +14,14 @@ public class Tugas01 {
     {
         String identitas = "Ryan Ramadhani / X RPL 2 / 29";
         System.out.println("Identitas = " + identitas);
+        
+        // Deklarasi
+        int[] data = new int[] {5000, 2000, 1000, 500, 100};
+        Scanner baca = new Scanner(System.in);
+        
+        // Proses
+        System.out.print("Masukkan Jumlah Uang : ");
+        int uang = baca.nextInt();
+        
     }
 }
