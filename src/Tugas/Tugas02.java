@@ -29,5 +29,7 @@ public class Tugas02 {
             n = n - (berat[i] * hasil);
             bayaran += hasil * bayar[i];
         }
+        
+        System.out.println("Bayaran yang didapat : " + bayaran);
     }
 }
